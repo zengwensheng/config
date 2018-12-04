@@ -1,12 +1,4 @@
 spring:
-  application:
-    name: order
-  cloud:
-    config:
-      discovery:
-        service-id: config
-        enabled: true
-      profile: dev
   swagger:
     enabled: true
     title: 接口文档
@@ -36,10 +28,6 @@ spring:
         #    parameter-type: 'header'
          #   required: true
     base-package: com.zws
-eureka:
-  client:
-    service-url:
-       defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/ # 多个以逗号隔开，eureka即是服务端，也是客户端
 management:
   endpoints:
     web:
@@ -47,4 +35,3 @@ management:
         include: '*'
   security:
     enabled: false
-test: bb5
