@@ -20,12 +20,15 @@ spring:
        POST[1]:
           code: 404
           message: 页面未找到
-    global-operation-parameters:
-        -   description: 'Token信息,必填项'
-            modelRef: 'string'
-            name: 'Authorization'
-            parameter-type: 'header'
-            required: true
+       POST[2]:
+          code: 401
+          message: 页面未授权   
+    #global-operation-parameters:
+     #   -   description: 'Token信息,必填项'
+      #      modelRef: 'string'
+       #     name: 'Authorization'
+        #    parameter-type: 'header'
+         #   required: true
     base-package: com.zws
 eureka:
   client:
