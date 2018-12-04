@@ -1,9 +1,4 @@
 spring:
-  datasource:
-     driver-class-name: com.mysql.jdbc.Driver
-     password: root
-     url: jdbc:mysql://118.24.109.67/zwsdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-     username: root
   swagger:
     enabled: true
     title: 接口文档
