@@ -35,3 +35,4 @@ management:
         include: '*'
   security:
     enabled: false
+test: bb
