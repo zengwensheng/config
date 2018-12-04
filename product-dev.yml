@@ -1,1 +1,37 @@
-
+spring:
+  swagger:
+    enabled: true
+    title: 接口文档
+    description: 接口信息
+    version: 1.0.0
+    contact:
+      name: zws
+      email: 2848392861@qq.com
+    security:
+       username: zws
+       password: zws123456
+       filter-plugin: true
+    global-response-messages:
+       POST[0]:
+          code: 400
+          message: 请求参数错误
+       POST[1]:
+          code: 404
+          message: 页面未找到
+       POST[2]:
+          code: 401
+          message: 页面未授权   
+    #global-operation-parameters:
+     #   -   description: 'Token信息,必填项'
+      #      modelRef: 'string'
+       #     name: 'Authorization'
+        #    parameter-type: 'header'
+         #   required: true
+    base-package: com.zws
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
