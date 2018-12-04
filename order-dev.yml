@@ -9,6 +9,12 @@ spring:
       profile: dev
   swagger:
     enabled: true
+    title: 接口文档
+    description: 接口信息
+    version: 1.0.0
+    contact:
+      name: zws
+      email: 2848392861@qq.com
     security:
        username: zws
        password: zws123456
