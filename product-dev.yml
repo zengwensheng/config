@@ -14,7 +14,7 @@ spring:
       email: 2848392861@qq.com
     security:
        username: zws
-       password: zws123456
+       password: '{cipher}AQA+zeyJTXQId3Ac57Rh+iNNP3YfqMGKf95DoB7miDqMpC7FBikFfbJFdmOJf8eQ0/Ldc0PG6VoRexVkgNfCf3gDTv59ce89k7N49JKsR3ekgGAx22SIgZi06YYlYhDe4fZtcfY4Qaud+5KdLRF9nK2UI54FHKI295KAjv4HIcbJ6nI5GXKfykHziaoEj6fv7o77pWAa9bK2hBBcqOAlVNlHVPAsPQcZIPmpYIeaz3En2fls8qr3YwO0q7M0JmbwMwsFePCqTOhdHOlD7tIfAiHveow+5QPjGRL3bEaYCGo7VREkmSMidZc9SDd/gPCcrYZSerbZeEBajVVBxSBXQlMtYHyyDRtwv6cNWbqiUP+5sJ/HD/QXyJYxo48eLlkDMBk='
        filter-plugin: true
     global-response-messages:
        POST[0]:
