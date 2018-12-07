@@ -33,3 +33,10 @@ spring:
         #    parameter-type: 'header'
          #   required: true
     base-package: com.zws
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false    
