@@ -1,1 +1,42 @@
-
+spring:
+  datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     password: '{cipher}AQASIrdhECGGu+tL+xBX1uQ/4oo52nUQb5S041yVgTqo9Bb4E+FaEYvsY88T9t5jaNG1wj0WSl8xnb3IDh0QICricZPJJupyMOUxJRKuSN9hEBJPNFblghfUpP6iMILKI1ItW28YGizZc1gnc+GXi8SOULxV0NQgjrK+Kkr9/ZDCYBcqSoCx5M8R/czsw/5jdZ9CGUr5ox0W4s1dxbOXZL7oJVyPBfJNgABLNdQ/1heNd9GCq+TlW0/JV32KcPf+nKj0sOj+GFxhyWM6OIFgXN2Gr2eeR/bLGFnhe2tKPkEUHUMtruTvTzS57HKPNp/FRypy50xU5ztoMJ1PWQCIcCgjXa6k6ER7YT2q+/p1uvU99MGrEXNlhwIKzVELy9tqSkE='
+     url: '{cipher}AQB5k5IDTSu42mc3RaS4tH/6+GpVAwP4+cSPL0w1ZnnYpHJLO35cQiTJRhI+++1B24M6NOOi6SzYPAZqYlIkadDiQVY6GTUI0GZHQWKKXaNy4yk+0liXruGppvLmcnSNlyUiVN2ha6ERF3kUaupemQ5tuhWn9ZBaJaGIPK+f8of91Y2bc0sQMOqHhvw75onBrS7dnNhYRcXgDsZsNrwUmoTN+/65f+K0NQbv709628uarw5TM9xIdQfZpgFv9lGeEJA60XXLZqFlviXt031zSHz/07D1BP66h7JNHwg6akWYuGuAHOcDC/B1/APu2cpw88EspCP++2ZF4sZyj9kiDb+K6fyMw5hy63+1RrhgkuNF+0oZijK/7zPDuGZo1Hla85HEcysXWod/AlWqHWmjswA3rjQQhIbQj45A0MAjy7peO991760U+0S5N1VJGXMZQNDyAFPXZA7hofa6344PkP+B3KB//jslCa6MNBuY8ixycQ=='
+     username: '{cipher}AQASIrdhECGGu+tL+xBX1uQ/4oo52nUQb5S041yVgTqo9Bb4E+FaEYvsY88T9t5jaNG1wj0WSl8xnb3IDh0QICricZPJJupyMOUxJRKuSN9hEBJPNFblghfUpP6iMILKI1ItW28YGizZc1gnc+GXi8SOULxV0NQgjrK+Kkr9/ZDCYBcqSoCx5M8R/czsw/5jdZ9CGUr5ox0W4s1dxbOXZL7oJVyPBfJNgABLNdQ/1heNd9GCq+TlW0/JV32KcPf+nKj0sOj+GFxhyWM6OIFgXN2Gr2eeR/bLGFnhe2tKPkEUHUMtruTvTzS57HKPNp/FRypy50xU5ztoMJ1PWQCIcCgjXa6k6ER7YT2q+/p1uvU99MGrEXNlhwIKzVELy9tqSkE='
+  swagger:
+    enabled: true
+    title: 接口文档
+    description: 接口信息
+    version: 1.0.0
+    contact:
+      name: zws
+      email: 2848392861@qq.com
+    security:
+       username: zws
+       password: '{cipher}AQA+zeyJTXQId3Ac57Rh+iNNP3YfqMGKf95DoB7miDqMpC7FBikFfbJFdmOJf8eQ0/Ldc0PG6VoRexVkgNfCf3gDTv59ce89k7N49JKsR3ekgGAx22SIgZi06YYlYhDe4fZtcfY4Qaud+5KdLRF9nK2UI54FHKI295KAjv4HIcbJ6nI5GXKfykHziaoEj6fv7o77pWAa9bK2hBBcqOAlVNlHVPAsPQcZIPmpYIeaz3En2fls8qr3YwO0q7M0JmbwMwsFePCqTOhdHOlD7tIfAiHveow+5QPjGRL3bEaYCGo7VREkmSMidZc9SDd/gPCcrYZSerbZeEBajVVBxSBXQlMtYHyyDRtwv6cNWbqiUP+5sJ/HD/QXyJYxo48eLlkDMBk='
+       filter-plugin: true
+    global-response-messages:
+       POST[0]:
+          code: 400
+          message: 请求参数错误
+       POST[1]:
+          code: 404
+          message: 页面未找到
+       POST[2]:
+          code: 401
+          message: 页面未授权   
+    #global-operation-parameters:
+     #   -   description: 'Token信息,必填项'
+      #      modelRef: 'string'
+       #     name: 'Authorization'
+        #    parameter-type: 'header'
+         #   required: true
+    base-package: com.zws
+ management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false 
