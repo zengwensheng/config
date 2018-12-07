@@ -33,7 +33,7 @@ spring:
         #    parameter-type: 'header'
          #   required: true
     base-package: com.zws
- management:
+management:
   endpoints:
     web:
       exposure:
