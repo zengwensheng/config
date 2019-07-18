@@ -1,5 +1,5 @@
 PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule    
-test: '{cipher}AQAOzljMrzgTOu4g+91M0xImqqqZwAv2K255BhWZgAGsqYgRVB4eiDVc3vSZtg43w1trncvkIoipwxN0Qon7/yjX2+etB5v4RJYJe4ZGYYaD1Cu674gTfniozaJMtrsGRqHxCjZyvHhMG2D4a1AWtRgKn/mSwOujmQHZmF4fQKPvi37gv7/5SdDMhu1quR9xzYOrxi/yL9bpRT2WMIUlXxdzL3Etsiv+A99LhuYfKp8V2SMGiupdz4h8anwjeXxpe92F9Yodc5emyZ7GPrHnSEEd4yfyWtf8+5JGAJCLO1C4nqhjzo3lvRopQ61BvowWuRif5sY9ahNlqxRnK6GvoOt3tr5b3xj+GR5R+RICRzJ0izUc5vNj4AOi4aLj+s2EJ7Y='
+test: 'ccc'
 
