@@ -1,5 +1,5 @@
 PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule    
-test: 'bb'
+test: 'cc'
 
